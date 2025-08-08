@@ -87,8 +87,7 @@ Puneet Khoiya — Project prepared during Jan–Jun 2024 (College project).
 
 * **Overview & goals**
 * **What I created** (high level)
-* **What I changed**
-* **New repo layout** (collapsible)
+* **Repo initial layout** (collapsible)
 * **Tech stack & rationale**
 * **Quick setup (dev)** — step-by-step commands
 * **Database import**
@@ -119,7 +118,7 @@ This repository is a cleaned and modernized skeleton of the Multiplex Theater On
 
 ---
 
-## New repo layout (high level)
+## Repo initial layout (high level)
 
 ```
 / (root)
@@ -137,15 +136,21 @@ This repository is a cleaned and modernized skeleton of the Multiplex Theater On
 │     ├─ auth.js
 │     ├─ movies.js
 │     ├─ schedules.js
+│     ├─ my-bookings.js
 │     └─ bookings.js
 ├─ client/
 │  ├─ package.json
 │  └─ src/
 │     ├─ index.js
+│     ├─ index.css
 │     ├─ App.jsx
 │     └─ pages/
 │        ├─ Home.jsx
+│        ├─ Booking.jsx
+│        ├─ My-Bookings.jsx
+│        ├─ Schedules.jsx
 │        └─ Movies.jsx
+|
 ├─ README.md
 ├─ LICENSE
 └─ CONTRIBUTING.md
@@ -191,12 +196,12 @@ If you prefer a GUI: import `sql/schema.sql` into a database named `multiplex_db
 
 ```bash
 cd server
-cp .env.example .env  # edit .env to add DB credentials and JWT secret
+cp .env  # edit .env to add DB credentials and JWT secret
 npm install
 npm run dev   # or npm start depending on package.json
 ```
 
-Example `.env` keys (already present in `.env.example`):
+Example `.env` keys :
 
 ```
 DB_HOST=localhost
@@ -253,7 +258,7 @@ This project is licensed under the MIT License — see the `LICENSE` file for de
 
 ---
 
-## Next steps I can help with
+## Basics
 
 * Implement the full `server/routes/*` business logic (CRUD + transactions)
 * Add JWT auth & role-based routes
@@ -263,5 +268,3 @@ This project is licensed under the MIT License — see the `LICENSE` file for de
 If you want any (or all) of those implemented now, tell me which one to start with.
 
 ---
-
-*Generated from your uploaded project report and the requested repo skeleton.*

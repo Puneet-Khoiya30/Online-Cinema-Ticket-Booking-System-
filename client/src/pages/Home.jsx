@@ -25,7 +25,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-red-600/20 to-purple-600/20"></div>
         <div className="relative max-w-7xl mx-auto px-4 py-16 text-center">
           <h1 className="text-6xl font-bold text-white mb-4 tracking-tight">
-            🎬 <span className="bg-gradient-to-r from-red-400 to-purple-400 bg-clip-text text-transparent">CinePlex</span>
+            🎬 <span className="bg-gradient-to-r from-red-400 to-purple-400 bg-clip-text text-transparent">Multiplex Theater</span>
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Experience the magic of cinema with premium seating, crystal-clear sound, and the latest blockbusters
@@ -126,7 +126,7 @@ export default function Home() {
       {/* Features Section */}
       <section className="max-w-7xl mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold text-white text-center mb-12">
-          Why Choose CinePlex?
+          Why Choose Multiplex Theater?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700">
@@ -175,7 +175,7 @@ export default function Home() {
             Backend: Node.js + Express + MySQL | 
             APIs: /api/movies, /api/bookings, /api/schedules
           </div>
-          <p className="text-gray-400">© 2025 CinePlex Theater. All rights reserved.</p>
+          <p className="text-gray-400">© 2025 Multiplex Theater. All rights reserved.</p>
         </div>
       </footer>
     </div>
