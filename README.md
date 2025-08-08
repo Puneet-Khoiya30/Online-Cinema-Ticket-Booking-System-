@@ -1,1 +1,75 @@
-# Online-Cinema-Ticket-Booking-System-
+# Multiplex Theater Online Booking System
+
+**Course project** — Online ticket booking system for a multiplex (Frontend: PHP, Backend DB: MySQL).  
+This repository contains a clean, documented skeleton you can push to GitHub and show on your resume.
+
+## Project Summary
+A web-based system that allows users to register, check movie schedules, and book tickets. Admins can manage movies, schedules, and view reports. Counter staff can validate m-tickets and issue physical tickets.
+
+Original project report (PDF) is in `docs/FINALprojectDBMSOnlineTicket.pdf`.
+
+## Features
+- User registration, login, password reset (placeholder)
+- Browse movies & showtimes
+- Book tickets for current-day shows (m-ticket SMS placeholder)
+- Admin dashboard: manage movies, schedules, users
+- Counter validation: redeem m-ticket codes and issue tickets
+- SQL schema + sample seed data included
+
+## Tech Stack
+- PHP (vanilla) for server-side code
+- MySQL for database
+- HTML/CSS for frontend (skeleton)
+- Optional: XAMPP / WAMP for local setup
+
+## Repo Structure
+```
+/ (root)
+├─ docs/                            # Project report and diagrams
+│  └─ FINALprojectDBMSOnlineTicket.pdf
+├─ src/                             # Application source (PHP)
+│  ├─ index.php
+│  ├─ login.php
+│  ├─ register.php
+│  ├─ book.php
+│  ├─ admin/
+│  │  └─ dashboard.php
+│  ├─ counter/
+│  │  └─ validate.php
+│  └─ includes/
+│     └─ db.php
+├─ sql/
+│  └─ schema.sql                     # CREATE TABLE + sample data
+├─ .gitignore
+├─ LICENSE
+└─ README.md
+```
+
+## Quick setup (local)
+1. Install XAMPP/WAMP and start Apache & MySQL.
+2. Copy the `src/` folder to your webroot (e.g., `htdocs/multiplex`).
+3. Create a MySQL database (e.g., `multiplex_db`) and import `sql/schema.sql`.
+4. Edit `src/includes/db.php` to set MySQL credentials.
+5. Open `http://localhost/multiplex/` in your browser.
+
+## How to push to GitHub (example)
+```bash
+cd path/to/multiplex-online-booking-system
+git init
+git add .
+git commit -m "Initial project skeleton and report"
+# create repo on GitHub (or use GitHub CLI), then:
+git remote add origin git@github.com:<YOUR_USER>/<REPO_NAME>.git
+git branch -M main
+git push -u origin main
+```
+
+## Resume-friendly project blurb
+**Multiplex Theater Online Booking System** — Web application for online cinema ticket booking using PHP & MySQL. Implemented user authentication, movie & schedule management, booking flow with m-ticket verification, and admin reporting. (Project report and database schema included.)
+
+## Notes
+- This repository is a skeleton meant to be extended; most PHP pages are minimal templates ready for your implementation.
+- See `sql/schema.sql` for table designs that match the project report.
+
+---
+Puneet Khoiya — Project prepared during Jan–Jun 2024 (College project).
