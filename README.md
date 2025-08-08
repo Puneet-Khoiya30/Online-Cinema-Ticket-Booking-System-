@@ -1,4 +1,4 @@
-# Multiplex Theater Online Booking System
+<!-- # Multiplex Theater Online Booking System
 
 **Course project** — Online ticket booking system for a multiplex (Frontend: PHP, Backend DB: MySQL).  
 This repository contains a clean, documented skeleton you can push to GitHub and show on your resume.
@@ -73,3 +73,37 @@ git push -u origin main
 
 ---
 Puneet Khoiya — Project prepared during Jan–Jun 2024 (College project).
+ -->
+
+# Multiplex Theater — Online Ticket Booking System
+
+**Repository:** Online-Cinema-Ticket-Booking-System-  
+**Author:** Puneet Khoiya
+
+A cleaned-up, modernized repository skeleton for the **Multiplex Theater Online Booking System** project.  
+Originally delivered with a PHP codebase and project report — this repo preserves the original SQL schema and project report but replaces the PHP app with a Node.js (Express) backend and React frontend skeleton so you can continue development with a modern stack.
+
+---
+
+## What I created (high level)
+
+This repository contains a complete skeleton for running and extending the project:
+
+- **README.md** — project overview, setup instructions, structure, and Contributing/License notes (this file).
+- **sql/schema.sql** — original `CREATE TABLE` statements and sample seed data.
+- **docs/FINALprojectDBMSOnlineTicket.pdf** — original project report (copied into `docs/`).
+- **server/** — Express backend skeleton (routes for auth, movies, schedules, bookings).
+- **client/** — React frontend skeleton with basic routing & pages.
+- **.gitignore**, **LICENSE**, **CONTRIBUTING.md** — repo housekeeping.
+
+### Key changes made
+- Removed original PHP `src/` app files.
+- Added `server/` (Node.js + Express) with `mysql2` skeleton and route stubs.
+- Added `client/` (React) skeleton with basic pages and routing.
+- Kept the original SQL schema and project report in `sql/` and `docs/`.
+- Updated README and repo layout to reflect the new stack.
+
+---
+
+## New repo layout (high level)
+
