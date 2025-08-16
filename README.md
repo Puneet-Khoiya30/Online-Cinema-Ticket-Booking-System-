@@ -234,9 +234,9 @@ Visit `http://localhost:3000` (client) and `http://localhost:5000` (server) by d
 
 ---
 
-## How I used your project report
+## How I used my project report
 
-The original project report (design, objectives, limitations, ER diagram, dataflow and activity diagrams) is preserved under `docs/FINALprojectDBMSOnlineTicket.pdf`. Use it as the authoritative specification while implementing the new server and client code.
+The original project report (design, objectives, limitations, ER diagram, dataflow and activity diagrams) is preserved under `docs/FINALprojectDBMSOnlineTicket.pdf`. Used it as the authoritative specification while implementing the new server and client code.
 
 ---
 
