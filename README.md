@@ -79,6 +79,8 @@ Puneet Khoiya — Project prepared during Jan–Jun 2024 (College project).
 
 &#x20;
 
+![Multiplex Theater Screenshot](docs/image.png)
+
 > Modernized repo skeleton for the *Multiplex Theater Online Booking System*. This repository preserves your original project report and SQL schema, and replaces the legacy PHP app with a Node.js (Express) backend + React frontend skeleton so you can continue development on a modern stack.
 
 ---
