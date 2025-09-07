@@ -170,3 +170,35 @@ VALUES
 ('Michael Scott', 'michael@dundermifflin.com', '9998887776', 'Do you have corporate booking offers?'),
 ('Pam Beesly', 'pam@dundermifflin.com', '9876543211', 'Can I book tickets for next month?'),
 ('Jim Halpert', 'jim@dundermifflin.com', '9123456789', 'Lost my booking code, please help.');
+
+
+CREATE TABLE show_seats (
+    seat_id INT AUTO_INCREMENT PRIMARY KEY,
+    show_id INT NOT NULL,
+    seat_number VARCHAR(10) NOT NULL,
+    status ENUM('available', 'locked', 'booked') DEFAULT 'available',
+    locked_by INT NULL, -- user_id locking the seat
+    locked_at DATETIME NULL, -- timestamp of lock
+    FOREIGN KEY (show_id) REFERENCES shows(show_id) ON DELETE CASCADE
+);
+CREATE UNIQUE INDEX idx_show_seat ON show_seats(show_id, seat_number);
+
+
+
+START TRANSACTION;
+
+UPDATE show_seats
+SET status = 'locked', locked_by = :user_id, locked_at = NOW()
+WHERE show_id = :show_id AND seat_number IN (:selected_seats)
+  AND status = 'available';
+
+-- Check that rows affected equals number of seats requested
+-- If not, rollback
+
+-- On successful payment:
+UPDATE show_seats
+SET status = 'booked'
+WHERE show_id = :show_id AND seat_number IN (:selected_seats) AND locked_by = :user_id;
+
+COMMIT;
+
